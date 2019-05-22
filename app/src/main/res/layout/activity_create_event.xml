@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_gravity="center"
+    android:orientation="vertical">
+
+    <EditText
+        android:id="@+id/titleET"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Event Title"
+        android:inputType="text"
+        android:maxLines="1"
+        android:layout_margin="10dp"/>
+    <EditText
+        android:id="@+id/venueET"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Event Venue"
+        android:inputType="text"
+        android:maxLines="1"
+        android:layout_margin="10dp"/>
+    <EditText
+        android:id="@+id/eventDateET"
+        android:layout_below="@id/venueET"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:clickable="true"
+        android:editable="false"
+        android:focusable="false"
+        android:ems="12"
+        android:hint="Event Date"
+        android:inputType="date"
+        android:maxLines="1"
+        android:layout_margin="10dp"/>
+
+    <Button
+        android:id="@+id/createEventButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAllCaps="false"
+        android:text="Create Event"
+        android:textColor="@color/white"
+        android:background="@color/colorPrimary"
+        android:layout_gravity="center_horizontal"
+        android:textSize="12sp"
+        android:layout_margin="10dp"/>
+
+</LinearLayout>

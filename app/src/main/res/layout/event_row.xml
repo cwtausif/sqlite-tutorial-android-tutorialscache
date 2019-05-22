@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="4dp"
+    android:background="@color/colorPrimary"
+    android:padding="6dp"
+    android:elevation="2dp"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <ImageView
+        android:id="@+id/eventIcon"
+        android:src="@drawable/ic_event"
+        android:layout_centerVertical="true"
+        android:layout_marginRight="5dp"
+        android:scaleType="fitXY"
+        android:layout_width="48dp"
+        android:layout_height="48dp" />
+    <TextView
+            android:id="@+id/eventNameTV"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@+id/eventIcon"
+            android:text="Event Name"
+            android:layout_marginRight="50dp"
+            android:textColor="#FFF"
+            android:textStyle="bold"
+            android:textSize="16dp" />
+        <TextView
+            android:id="@+id/venueTextView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="4dp"
+            android:layout_toRightOf="@+id/eventIcon"
+            android:text="Venue"
+            android:textColor="@color/white"
+            android:textSize="14dp"
+             android:layout_below="@id/eventNameTV" />
+
+
+        <TextView
+            android:id="@+id/dateTextView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="1/1/2019 - 2/2/2019"
+            android:layout_toRightOf="@+id/eventIcon"
+            android:textColor="@color/white"
+            android:textSize="14dp"
+            android:layout_below="@+id/venueTextView" />
+
+        <ImageView
+            android:id="@+id/optionsImageView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="4dp"
+            android:src="@drawable/ic_more"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentRight="true"/>
+    </RelativeLayout>
