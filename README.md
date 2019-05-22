@@ -1,0 +1,1 @@
+# sqlite-tutorial-android-tutorialscache
